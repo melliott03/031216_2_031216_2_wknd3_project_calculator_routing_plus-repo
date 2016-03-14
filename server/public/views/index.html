@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+
+    <!-- STYLES-->
+    <link rel="stylesheet" href="/vendors/bootstrap.css" ></script>
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/client.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class='entireCalcDiv'>
+      <textarea id="operatorsOperandsEntered" class="well btn-block"></textarea>
+      <div>Ans:
+        <h4 class='FinalOutput well'></h4>
+      </div>
+      <div class='buttons'>
+          <button class="submit btn-lg btn-info calcbtn" id="1" data-num="1" name="name" id="numinput">1</button>
+          <button class="submit btn-lg btn-info calcbtn" id="2" data-num="2" name="name" id="numinput">2</button>
+          <button class="submit btn-lg btn-info calcbtn" id="3" data-num='3' name="name" id="numinput">3</button>
+          <button class="submit btn-lg btn-warning operatorbtn" id="+" data-num='+' name="name" id="numinput">+</button><br>
+          <button class="submit btn-lg btn-info calcbtn" id="4" data-num='4' name="name" id="numinput">4</button>
+          <button class="submit btn-lg btn-info calcbtn" id="5" data-num='5' name="name" id="numinput">5</button>
+          <button class="submit btn-lg btn-info calcbtn" id="6" data-num='6' name="name" id="numinput">6</button>
+          <button class="submit btn-lg btn-warning operatorbtn" id="-" data-num='-' name="name" id="numinput">-</button><br>
+          <button class="submit btn-lg btn-info calcbtn" id="7" data-num='7' name="name" id="numinput">7</button>
+          <button class="submit btn-lg btn-info calcbtn" id="8" data-num='8' name="name" id="numinput">8</button>
+          <button class="submit btn-lg btn-info calcbtn" id="9" data-num='9' name="name" id="numinput">9</button>
+          <button class="submit btn-lg btn-warning operatorbtn" id="/" data-num='/' name="name" id="numinput">/</button><br>
+          <button class="submit btn-lg btn-info calcbtn" id="." data-num='.' name="name" id="numinput">.</button>
+          <button class="submit btn-lg btn-info calcbtn" id="0" data-num='0' name="name" id="numinput">0</button>
+          <button class="submit btn-lg btn-info calcbtn btnspace" id="" data-num='' name="name" id="numinput">cos</button>
+          <button class="submit btn-lg btn-warning operatorbtn" id="*" data-num='*' name="name" id="numinput">*</button>
+
+      </div>
+
+      <div class='calculator'>
+      <div class="numberwell">
+
+
+      <form id="calculatorBtns" class="numberwell" width:50px>
+
+      </form>
+    </div>
+
+    <div class="numberwell">
+    <form id="numForm" class="numberwell" width: 220px>
+      <button class="btn btn-success btn-block clearbtn" id="del" name="name" id="numinput">clear</button>
+    </form>
+    <button class="submit btn btn-danger btn-block equalbtn" id="del" name="name" id="numinput">=</button>
+
+  </div>
+
+    </div>
+
+
+  </div>
+  </body>
+
+
+</html>
