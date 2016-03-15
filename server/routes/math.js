@@ -6,7 +6,7 @@ var inputArray = [];
 
 function multiplyDivide(){
   for (var i = 0; i<inputArray.length;i++){
-  while (inputArray[i] == '*' || inputArray[i] == '/'){ //ADDITION
+  while (inputArray[i] == '*' || inputArray[i] == '/'){ //
 
           if(inputArray[i] == '*'){
             operator = parseInt(inputArray[i]);

@@ -1,35 +1,47 @@
 .entireCalcDiv{
-  width: 400px;
+  width: 450px;
   margin: 30px auto;
   padding: 50px;
-  background-color: gray;
-
+  background-color: #804000;
+  border-radius: 10px;
 }
 .calcbtn {
   width: 72px;
   height: 72px;
-  padding: 20px;
+  padding-bottom: 13px;
 }
 .operatorbtn{
   width: 72px;
   height: 72px;
   padding-bottom: 13px;
 }
-.clearbtn{
-  height: 50px;
+.buttons{
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
-
-.btnspace{
-  color: #3498db;
-  color: rgba(0, 0, 0, 0.0);
-
+.FinalOutput{
+  font-weight: bold;
+  font-size: 20px;
+  font: white;
+  height: 60px;
+}
+.submit{
+  margin: 5px;
 }
 .equalbtn{
   font-weight: bold;
   font-size: 30px;
-  height: 70px;
+  height: 60px;
+  /*margin: 5px;*/
+  margin: 5px auto 5px auto;
+  border: 5px auto 5px auto;
+  padding: 5px auto 5px auto;
 }
-.FinalOutput{
-  height: 50px;
-  border-style:outset;
+#operatorsOperandsEntered{
+  font-weight: bold;
+  font-size: 20px;
+}
+#answer{
+  color: white;
 }
