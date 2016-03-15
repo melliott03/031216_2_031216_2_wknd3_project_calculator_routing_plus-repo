@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use("/math", math);
-console.log('yo me too');
 
 app.use("/", index);
 // app.use("/math", math);
