@@ -15,8 +15,11 @@ $(document).ready(function (){
     // $('.operatorbtn').data('clicked',false);
     var $el = $(this);
     var btnvalue = $el.data('num');
+    //add a zero before decimal if a decimal is the first thing entered
+    if(btnvalue == '.' && thingsEntered ==''){
+      $('#operatorsOperandsEntered').val($('#operatorsOperandsEntered').val()+'0' + btnvalue);
 
-
+    }else{
     console.log('data from button:', $el.data('num'));
     $('#operatorsOperandsEntered').val($('#operatorsOperandsEntered').val() + btnvalue);
     console.log("new button's value:", btnvalue);
@@ -24,16 +27,12 @@ $(document).ready(function (){
     console.log("operatorsOperandsEntered value:", thingsEntered);
     lastItemEntered = btnvalue;
     console.log('that last value entered ', lastItemEntered);
-
+    }
     });
 
 
     $('.operatorbtn').on('click', function(){
       event.preventDefault();
-      // $( "input[name$='letter']" ).val( "a letter" );
-      // $('.operatorsOperandsEntered').val();
-      // if()
-      // lastItemEntered = thingsEntered.substr(thingsEntered.length - 1);
       thingsEntered = $('#operatorsOperandsEntered').val();
       console.log('last item in entry: ', lastItemEntered);
       var $el = $(this);
@@ -62,9 +61,7 @@ $(document).ready(function (){
       lastItemEntered = btnvalue;
 
     }
-      // if (!$('#operatorbtn').data('clicked')) {
-      //   $('#operatorbtn').data('clicked',true);
-      // };
+
       });
 
 
@@ -97,41 +94,3 @@ $(document).ready(function (){
   });
 
 });
-
-  // $("#operatorsOperandsEntered").on("submit", function(event) {
-  //   event.preventDefault();
-  //
-  //   var $el = $(this);
-  //   console.log('data from button:', $el.data('data-num'));
-  //
-  //   var values = {};
-  //   console.log("HERE: ", $("#catForm"));
-  //   $.each($("#catForm").serializeArray(), function(i, field){//these names can be anything just the order matters
-  //     values[field.name] = field.value; //these name/value names are important to keep
-  //   });
-  //   $.ajax({
-  //     type: "POST",
-  //     url:"/add",
-  //     data: values,
-  //     success: function(data){
-  //       $.ajax({
-  //         type: "GET",
-  //         url:"/cats",
-  //         success: function(catsObject){
-  //           console.log('inside of success ', catsObject);
-  //           appendDom(catsObject);
-  //           function appendDom(catsObject){
-  //             $('#putCatsHere').empty();
-  //             for (var i = 0; i < catsObject.length; i++) {
-  //               $('#putCatsHere').append('<p>'+ catsObject[i].name +'</p>');
-  //             }
-  //             console.log('inside of appendDom ', catsObject);
-  //
-  //
-  //
-  //           };
-  //         }
-  //       });
-  //     }
-  //   });
-  //
