@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <!-- SCRIPTS -->
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/scripts/client.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/client.js"></script>
   </head>
   <body>
     <div class='entireCalcDiv'>
@@ -28,11 +28,14 @@
           <button class="submit btn-lg btn-info calcbtn" id="8" data-num='8' name="name" id="numinput">8</button>
           <button class="submit btn-lg btn-info calcbtn" id="9" data-num='9' name="name" id="numinput">9</button>
           <button class="submit btn-lg btn-warning operatorbtn" id="/" data-num='/' name="name" id="numinput">/</button><br>
-          <button class="submit btn-lg btn-success calcbtn clearbtn" id="del" id="numinput" data-num='' name="name" id="numinput">clear</button>
+          <button class="submit btn-lg btn-danger calcbtn clearbtn" id="del" id="numinput" data-num='' name="name" id="numinput">clear</button>
           <button class="submit btn-lg btn-info calcbtn" id="0" data-num='0' name="name" id="numinput">0</button>
-          <button class="submit btn-lg btn-info calcbtn " id="." data-num='.' name="name" id="numinput">.</button>
-          <button class="submit btn-lg btn-warning operatorbtn" id="*" data-num='*' name="name" id="numinput">*</button>
-          <button class="submit btn btn-danger btn-block equalbtn " id="del" name="name" id="numinput">=</button>
+          <button class="submit btn-lg btn-info dotbtn " id="." data-num='.' name="name" id="numinput">.</button>
+          <button class="submit btn-lg btn-warning operatorbtn" id="*" data-num='*' name="name" id="numinput">*</button><br>
+          <button class="submit btn-lg btn btn-success btn equalbtn " id="eql" name="name" id="numinput">=</button>
+          <button class="submit btn-lg btn-warning calcbtn delbtn" id="del" id="numinput" data-num='' name="name" id="numinput">del</button>
+
+
       </div>
   </div>
   </body>

@@ -10,6 +10,11 @@
   height: 72px;
   padding-bottom: 13px;
 }
+.dotbtn{
+  width: 72px;
+  height: 72px;
+  padding-bottom: 13px;
+}
 .operatorbtn{
   width: 72px;
   height: 72px;
@@ -30,13 +35,11 @@
   margin: 5px;
 }
 .equalbtn{
+  width: 71.5%;
+  height: 72px;
+  padding-bottom: 13px;
   font-weight: bold;
   font-size: 30px;
-  height: 60px;
-  /*margin: 5px;*/
-  margin: 5px auto 5px auto;
-  border: 5px auto 5px auto;
-  padding: 5px auto 5px auto;
 }
 #operatorsOperandsEntered{
   font-weight: bold;
