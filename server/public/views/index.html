@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class='entireCalcDiv'>
-      <textarea id="operatorsOperandsEntered" class="well btn-block"></textarea>
+      <textarea id="operatorsOperandsEntered" class="well btn-block" onkeyup="adjustHeight(this)"></textarea>
       <div><span id="answer">Ans</span>
         <div class='FinalOutput well btn-block'>0</div>
       </div>
@@ -33,7 +33,7 @@
           <button class="submit btn-lg btn-info dotbtn " id="." data-num='.' name="name" id="numinput">.</button>
           <button class="submit btn-lg btn-warning operatorbtn" id="*" data-num='*' name="name" id="numinput">*</button><br>
           <button class="submit btn-lg btn btn-success btn equalbtn " id="eql" name="name" id="numinput">=</button>
-          <button class="submit btn-lg btn-warning calcbtn delbtn" id="del" id="numinput" data-num='' name="name" id="numinput">del</button>
+          <button class="submit btn-lg btn-warning calcbtn delbtn" id="del" id="numinput" data-num='' name="name" id="numinput">delete</button>
 
 
       </div>

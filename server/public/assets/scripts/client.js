@@ -73,7 +73,7 @@ $(document).ready(function (){
       var $el = $(this);
       var btnvalue = $el.data('num');
       console.log('data from button:', $el.data('num'));
-      if(lastItemEntered == ''){
+      if(lastItemEntered === ''){
         //do nothing
       }else if(lastItemEntered == '/' || lastItemEntered == '*' || lastItemEntered == '+' || lastItemEntered == '-'){
         console.log('yey, I made it past fort logic!');
